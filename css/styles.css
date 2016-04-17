@@ -45,6 +45,15 @@ p {
 }
 .bg-contact {
   background-color: #494949;
+  color: #f9f9f9;
+  text-align: center;
+}
+.bg-contact a {
+  color: #00ffc3;
+  -webkit-transition: all .35s;
+  -moz-transition: all .35s;
+  text-decoration: none;
+  transition: all .35s;
 }
 .bg-dark {
   color: #fff;
