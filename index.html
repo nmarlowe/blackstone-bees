@@ -13,8 +13,8 @@
     <!-- Bootstrap -->
     <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" type="text/css">
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="js/thickbox.js"></script>
+    <link rel="stylesheet" href="//blueimp.github.io/Gallery/css/blueimp-gallery.min.css">
+    <link rel="stylesheet" href="css/bootstrap-image-gallery.min.css">
 
     <!-- Plugin CSS -->
     <link rel="stylesheet" href="css/animate.css" type="text/css">
@@ -22,7 +22,6 @@
     <!-- Custom CSS -->
     <!-- <link rel-"stylesheet" href="css/styles-temp.css" type="text/css"> -->
     <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <link rel="stylesheet" href="css/thickbox.css" type="text/css" media="screen" />
 
     <!-- Custom Fonts -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato|Merriweather:400,400italic,700,700italic,800">
@@ -112,39 +111,92 @@
       </div>
     </div>
   </section>
-  <section class="bg-primary gallery" id="photo-gallery">
-    <div class="container">
-      <!-- <div class="row">
+  <section class="bg-gallery" id="photo-gallery">
+    <div class="container-fluid">
+      <div class="row">
         <div class="col-lg-8 col-lg-offset-2 text-center">
           <h2 class="section-heading wow fadeInUp  textual">Photo Gallery</h2>
           <hr class="light wow fadeInUp">
-          <p>
-            You know, it really doesn’t matter what you write as long as you’ve got a young, and beautiful, piece of text. If Trump Ipsum weren’t my own words, perhaps I’d be dating it. We are going to make placeholder text great again. Greater than ever before. Look at that text! Would anyone use that? Can you imagine that, the text of your next webpage?! You’re disgusting.
-          </p>
-          <p>
-            This placeholder text is gonna be HUGE. My text is long and beautiful, as, it has been well documented, are various other parts of my website. You know, it really doesn’t matter what you write as long as you’ve got a young, and beautiful, piece of text. Be careful, or I will spill the beans on your placeholder text. I’m the best thing that ever happened to placeholder text.
-          </p>
-          <p>
-            It’s about making placeholder text great again. That’s what people want, they want placeholder text to be great again. He’s not a word hero. He’s a word hero because he was captured. I like text that wasn’t captured. If Trump Ipsum weren’t my own words, perhaps I’d be dating it.
-          </p>
-          <p>
-            It’s about making placeholder text great again. That’s what people want, they want placeholder text to be great again. You could see there was text coming out of her eyes, text coming out of her wherever. Look at that text! Would anyone use that? Can you imagine that, the text of your next webpage?! Trump Ipsum is calling for a total and complete shutdown of Muslim text entering your website. Trump Ipsum is calling for a total and complete shutdown of Muslim text entering your website. This placeholder text is gonna be HUGE.
-          </p>
-          <p>
-            Lorem Ipsum is unattractive, both inside and out. I fully understand why it’s former users left it for something else. They made a good decision. You’re disgusting. Look at that text! Would anyone use that? Can you imagine that, the text of your next webpage?!
-          </p>
-        </div>
-      </div>-->
-      <div class="row">
-        <div class="col-md-3">
-          <a href="img/profile.jpg" title="add a caption to title attribute / or leave blank" class="thickbox"><img src="img/profile.jpg" alt="Single Image"/></a>
         </div>
       </div>
-    </div>
+      <!-- The Bootstrap Image Gallery lightbox, should be a child element of the document body -->
+      <div id="blueimp-gallery" class="blueimp-gallery">
+          <!-- The container for the modal slides -->
+          <div class="slides"></div>
+          <!-- Controls for the borderless lightbox -->
+          <h3 class="title"></h3>
+          <a class="prev">‹</a>
+          <a class="next">›</a>
+          <a class="close">×</a>
+          <a class="play-pause"></a>
+          <ol class="indicator"></ol>
+          <!-- The modal dialog, which will be used to wrap the lightbox content -->
+          <div class="modal fade" tabindex="">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <button type="button" class="close" aria-hidden="true">&times;</button>
+                          <h4 class="modal-title"></h4>
+                      </div>
+                      <div class="modal-body next"></div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-default pull-left prev">
+                              <i class="glyphicon glyphicon-chevron-left"></i>
+                              Previous
+                          </button>
+                          <button type="button" class="btn btn-primary next">
+                              Next
+                              <i class="glyphicon glyphicon-chevron-right"></i>
+                          </button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div id="links">
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 text-center">
+            <a href="img/bees1.jpg" title="Banana" data-gallery>
+              <img src="img/thumbnails/bees1.jpg" alt="Banana">
+            </a>
+            <a href="img/bees2.jpg" title="Apple" data-gallery>
+              <img src="img/thumbnails/bees2.jpg" alt="Apple">
+            </a>
+            <a href="img/bees3.jpg" title="Orange" data-gallery>
+              <img src="img/thumbnails/bees3.jpg" alt="Orange">
+            </a>
+            <a href="img/bees4.jpg" title="Orange" data-gallery>
+              <img src="img/thumbnails/bees4.jpg" alt="Orange">
+            </a>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-lg-8 col-lg-offset-2 text-center">
+            <a href="img/chicken1.jpg" title="Banana" data-gallery>
+              <img src="img/thumbnails/chicken1.jpg" alt="Banana">
+            </a>
+            <a href="img/chicken2.jpg" title="Apple" data-gallery>
+              <img src="img/thumbnails/chicken2.jpg" alt="Apple">
+            </a>
+            <a href="img/chicken3.jpg" title="Orange" data-gallery>
+              <img src="img/thumbnails/chicken3.jpg" alt="Orange">
+            </a>
+            <a href="img/chicken4.jpg" title="Orange" data-gallery>
+              <img src="img/thumbnails/chicken4.jpg" alt="Orange">
+            </a>
+          </div>
+        </div>
+
+      </div>
+  </section>
+
+  <section class="bg-contact">
+    
   </section>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!-- <script src="js/jquery.js"></script> -->
+    <script src="js/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
 
@@ -152,6 +204,9 @@
     <script src="js/jquery.easing.min.js"></script>
     <script src="js/jquery.fittext.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="//blueimp.github.io/Gallery/js/jquery.blueimp-gallery.min.js"></script>
+    <script src="js/bootstrap-image-gallery.min.js"></script>
+
 
     <!-- Custom Theme JavaScript -->
     <script src="js/styles.js"></script>
