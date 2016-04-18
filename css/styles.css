@@ -44,7 +44,7 @@ p {
   background-color: #f9f9f9;
 }
 .bg-contact {
-  background-color: #494949;
+  background-color: #343434;
   color: #f9f9f9;
   text-align: center;
 }
@@ -307,4 +307,41 @@ box-shadow: 0 0 8px rgba(0, 0, 0, 0.9);
 
 .textual-1{
   text-shadow: 2px 4px 3px rgba(0,0,0,0.4);
+}
+
+footer {
+  clear: both;
+  color: #ff8787;
+  font-size: 10px;
+  height: 25px;
+  margin-bottom: 0px;
+  overflow: hidden;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  text-align: center;
+  width: 100%;
+}
+
+footer a {
+  color: #ff8787;
+
+}
+footer a:hover, a:focus {
+  color: #ff8787;
+  text-decoration: none;
+}
+
+footer {
+  background: #343434;
+  border-color: #343434;
+}
+
+.developer {
+  font-size: 1.2em;
+}
+.peace {
+  color: #fff;
+}
+.love {
+  color: #f00;
 }
