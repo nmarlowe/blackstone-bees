@@ -5,7 +5,7 @@
   $('a.page-scroll').bind('click', function(event) {
     var $anchor = $(this);
     $('html, body').stop().animate({
-      scrollTop: ($($anchor.attr('href')).offset().top - 50)
+      scrollTop: ($($anchor.attr('href')).offset().top + 2)
     }, 1250, 'easeInOutExpo');
     event.preventDefault();
   });
@@ -29,10 +29,13 @@
     }
   );
 
+  // Get heigth of viewport
+  var $h = $(window).height();
+
   // Offset for Main Navigation
   $('#navmain').affix({
     offset: {
-      top: 100
+      top: $h
     }
   })
 

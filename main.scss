@@ -1,4 +1,6 @@
-@import 'base/variables';
+// Main scss file
+
+@import 'sass/base/variables';
 
 html {
   height: 100%;
@@ -54,7 +56,7 @@ p {
 }
 
 .bg-gallery {
-  background-color: $lighter-background;
+  background-color: $lighter-color;
 }
 
 .bg-contact {
@@ -96,10 +98,10 @@ aside {
 }
 
 .navbar-default .navbar-header .navbar-brand {
-  text-transform: uppercase;
+  color: $text-color;
   font-family: 'Lato', sans-serif;
   font-weight: 700;
-  color: $text-color;
+  text-transform: uppercase;
 }
 
 .navbar-default .navbar-header .navbar-brand:hover, .navbar-default .navbar-header .navbar-brand:focus {
@@ -136,7 +138,7 @@ aside {
   }
 
   .navbar-default .navbar-header .navbar-brand {
-    color: #f9f9f9;
+    color: $lighter-color;
   }
 
   .navbar-default .navbar-header .navbar-brand:hover,
@@ -146,7 +148,7 @@ aside {
 
   .navbar-default .nav > li>a,
   .navbar-default .nav>li>a:focus {
-    color: #f9f9f9;
+    color: $lighter-color;
   }
 
   .navbar-default .nav > li>a:hover,
@@ -155,8 +157,8 @@ aside {
   }
 
   .navbar-default.affix {
-    border-color: $border-color;
     background-color: $primary-color;
+    border-color: $border-color;
   }
 
   .navbar-default.affix .navbar-header .navbar-brand {
@@ -183,15 +185,15 @@ aside {
 header {
   background: $header-image;
   background-position: center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
   background-size: cover;
-  color: #fff;
+  color: $white-color;
   min-height: auto;
   position: relative;
   text-align: center;
   width: 100%;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  -webkit-background-size: cover;
 }
 
 header .header-content {
@@ -262,26 +264,26 @@ header .header-content .header-content-inner p span {
 
 ::-moz-selection {
   background: $text-color;
-  color: #fff;
+  color: $white-color;
   text-shadow: none;
 }
 
 ::selection {
   background: $text-color;
-  color: #fff;
+  color: $white-color;
   text-shadow: none;
 }
 
 img {
   ::selection {
     background: 0 0;
-    color: #fff;
+    color: $white-color;
   }
 }
 
 img::-moz-selection {
   background: 0 0;
-  color: #fff;
+  color: $white-color;
 }
 
 .shadow {
